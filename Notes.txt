@@ -1,0 +1,651 @@
+02/01/2023
+
+HTML :- Stands for HYPER TEXT MARKUP LANGUAGE. This helps to write the content on a page. 
+e.g. If we want to create a button on a page then it is done by HTML.
+
+CSS :- Stands for CASCADING STYLE SHEET. This helps write the styles applied to the page 
+content. e.g. If we have a button on a page then how does that button looks is decided by CSS.
+
+JS :- Stands for JAVASCRIPT. This helps to write the behaviour or action of the page contents. 
+e.g. If you have a button on a page then what happens when we click on that button is decided by JS.
+
+helloWorld.html :-
+
+Hello World!!! Hello World, Om...
+
+
+/****************************************************************************************************/
+
+03/01/2023
+
+<p></p> :- Paragraph tag / element, <p> this is paragraph opening tag and </p> is paragraph closing tag.
+
+helloWorld.html :-
+
+Hello World!!! Hello World, Om...
+
+<p>
+  Hey there, I am Om Prakash Chaurasia and I completed my B.tech in Aeronautical
+  Engineering in 2021 with the aggrigate of 67.49% and currently going for Full
+  Stack Web-Development program from Newton School
+</p>
+<p>
+  Paragraph Tag is a Block level element so, it always creates a new block or
+  starts from new line automatically.
+</p>
+
+<p>
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt saepe ab
+  minus sed. Delectus, unde consectetur rerum natus iure inventore nostrum
+  similique modi ad! Quos?
+</p>
+<p>
+  lorem is used to create a dummy text on our website. It is used as lorem25,
+  here the number 25 is not fixed, can use any number and then hit TAB button
+  and it will generate that many dummy text for us.
+</p>
+
+<p>To check the compatibility of the tags with browser visit 'www.mdn.com'</p>
+
+Not every tag in html requires a closing tag. Some tags are self-closing tags
+e.g. <br />, <!DOCTYPE html>, <meta>, etc.
+
+
+index.html :-
+
+<!DOCTYPE html>
+<!--This tag says that this document of type html and '!' sign indicates that this is version 5 
+    and it is the latest version for now. In earlier versions we used to write version number, 
+    but in html5 we don't need the version number-->
+<html lang="en">
+  <!-- html tags used to wrap the entire content of the page in it. And lang="en" says what 
+        language we are using to write our content on the page, which in our case is "English"  -->
+  <head>
+    <!-- head tag contains all the informations of the website whih we don't want to show on 
+        our website like 'title' 'meta', 'link', etc. -->
+    <meta charset="UTF-8" />
+    <!-- meta tag is used to give the information of the website like: author of the website, 
+        character set used, view-port of the page, etc. -->
+    <!-- meta is also a self closing tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World - HTML</title>
+    <!-- title tag is used to give the title to the website -->
+  </head>
+  <body>
+    <!-- body tag wraps all the content of the website which has to be displayed to the user, whatever 
+        we write in a body tag will be visible to the user on the UI -->
+    Hi there, all the tags in html are not case sensitive. Therefore, we can
+    write tags in any case like upper or lower. but preferable is lower case.
+
+    <!-- This is used to create / write a comment in html and comment are not executable part of 
+        the code i.e. It won't be visible on the UI -->
+  </body>
+</html>
+
+
+<body>
+    Heading Tags :- In html, there are 6 types of heading. These are :-
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    But in practical projects we use heading 1, 2 and 3 only. As we go from top
+    to bottom in heading tag, we can see that the heading font, and weight
+    decreasing. But while using we should not use heading on that basis. We use
+    heading tag to show what is the intensity / importance of that content.
+    Heading tags are also Block level element. Therefore, it always starts from
+    new line and takes its own space automatically. Strong tag :-
+    <strong>
+      This tag is used to show the importance of the information. It makes the
+      text bold but its main feature is not to make the text bold but to show
+      the special significance to the information. Strong tag is an Inline
+      element i.e. it does not start the content from new line.
+    </strong>
+</body>
+
+/****************************************************************************************************/
+
+04/01/2023
+
+<body>
+    <em>
+      Stands for emphasis tag. It gives special significance to text just like
+      STRONG tag and also it makes the text in Italics. But making italics is
+      not its main feature but giving special emphesis is. This is also an
+      Inline tag.
+    </em>
+</body>
+
+
+  <body>
+    <em>
+      Stands for emphasis tag. It gives special significance to text just like
+      STRONG tag and also it makes the text in Italics. But making italics is
+      not its main feature but giving special emphesis is. This is also an
+      Inline tag.
+    </em>
+
+    <small>
+      This tag makes the text small and shows that this information is not that
+      important. It is also an Inline tag.
+    </small>
+
+    <p>
+      We can use
+      <em> tag <strong> tag and vice-versa </strong> this doesn't matter </em>
+      which tag you are using inside which tag.
+    </p>
+
+    <h1>Richest people in the world</h1>
+    <p>
+      <ins>
+        tag stands for insert tag shows this this piece of text has been
+        inserted later on. Initially it was not present. It also underlines the
+        text but this is not its main feature. This is also an Inline tag.
+      </ins>
+    </p>
+    <p><ins>Elon Musk</ins></p>
+    <p>Bill Gates</p>
+    <p><del>Jack Dorsey</del></p>
+    <del>
+      tag is stands for delete tag and this shows that this piece of text was
+      there before but now we have removed it. It also provide text with strike
+      through but this is not its main feature. This is also an inline tag.
+    </del>
+    <p>Mack Zuckerbg</p>
+  </body>
+
+  <body>
+    <h1>Algorithms</h1>
+    <p>Binary Search</p>
+    <!-- sub stands for Subscript tag. This tag is also Inline tag. -->
+    <p>Time Complexity : log<sub>n</sub></p>
+    <p>.........................................</p>
+    <p>Nested Looping</p>
+    <!-- sup stands for <Superscript tag. This tag  is also Inline tag. -->
+    <p>Time Complexity : n<sup>2</sup></p>
+  </body>
+
+  <body>
+    <p>Name : <b>Om Prakash Chaurasia</b></p>
+    <p>Location : <b>Bangalore</b></p>
+    <b>
+      tag stands for bold and it is also an Inline element. It doesnot serve any
+      special purpose like strong tag. It just gives bold effect to text.
+    </b>
+    <p>Name : <i>Om Prakash Chaurasia</i></p>
+    <p>Location : <i>Bangalore</i></p>
+    <i>
+      stands for italics tag and like bold tag it is also Inline tag and doesnot
+      serve any special purpose, just makes the text italics.
+    </i>
+    <p>Name : <u>Om Prakash Chaurasia</u></p>
+    <p>Location : <u>Bangalore</u></p>
+    <u
+      >stands for underline and like bold tag it also doesn't have any special
+      purpose, just makes the text underlined. It is also an Inline tag.
+    </u>
+
+    <!-- Block Level Elements -->
+    The element which will block every other elements on its way and starts from
+    a new line are called Block Level Elements. e.g.
+    <p></p>
+    ,
+    <h1></h1>
+    ,
+    <h2></h2>
+    ,
+    <div></div>
+    , etc.
+
+    <div>
+      Stands for division element. It doesn't have any need rather than to group
+      the elements together. It just helps us to create a container of elements.
+      It is also a Block level element
+    </div>
+
+   <!-- Inline Level Elements -->
+    The element which doesnot block other elements on its way and doesnot starts
+    from new line and only takes the space as much as content requires are
+    called Inline Level Elements. e.g. <strong></strong>, <em></em>,
+    <ins></ins>, <b></b>, <i></i>, <u></u>, <span></span> etc.
+
+    <p>This will be in <span>pink</span> and <span>red</span></p>
+    <span
+      >Span is also just like div i.e. it is also used to create a division or
+      container but it is Inline element and creates inline container.
+    </span>
+  </body>
+
+  <body>
+    <!-- Creating a List -->
+    List are of three types in html. These are :- 
+    i. UNORDERED List :- <ul>Stands for unordered list</ul>
+    ii. ORDERED List :- <ol>Stands for ordered list</ol>
+    iii. DESCRIPTION / DEFINITION List :- 
+    e.g. of both are shown below :-
+    <ul>
+      <li>Stands for list item</li>
+      <li>Milk</li>
+      <li>Bread</li>
+      <li>Ghee</li>
+      <li>Butter</li>
+    </ul>
+
+    <ol>
+      <li>Hello there</li>
+      <li>One</li>
+      <li>Paneer</li>
+      <li>Butter Masala</li>
+    </ol>
+
+    <!-- Nested List -->
+    List inside a list is called nested list. e.g.
+    <p>Super Heros</p>
+    <ol>
+      <li>Thor</li>
+      <ul>
+        <li>Lightning</li>
+        <li>Ageless</li>
+      </ul>
+      <li>Deadpool</li>
+      <ul>
+        <li>Martial Arts</li>
+        <li>Healing</li>
+      </ul>
+    </ol>
+    <!-- Although this is nested list and the output looks the same but this not the correct 
+        way to write the nested list. The correct way to write nested list is shown below -->
+    <p>Super Heros</p>
+    <ol>
+      <li>
+        Thor
+        <ul>
+          <li>Lightning</li>
+          <li>Ageless</li>
+        </ul>
+      </li>
+      <li>
+        Deadpool
+        <ul>
+          <li>Martial Arts</li>
+          <li>Healing</li>
+        </ul>
+      </li>
+    </ol>
+
+        <!-- Definition List -->
+    <p>Desserts Menu</p>
+    <dl>
+      <!-- <dl> tag stands for definition list and definition list creates the connection 
+        between the other items in the list.  -->
+      <dt>
+        <!-- <dt> stands for definition term -->
+        Apricot Delight Ice Cream
+      </dt>
+      <dd>A soft sweet frozen food</dd>
+      <!-- <dd> stands for definition description. i.e. whatever is present in <dt> tag, what 
+        is the description of that term. -->
+
+      <dt>Pan Ice Cream</dt>
+      <dd>Pan flavour ice cream</dd>
+    </dl>
+
+    <dl>
+      <dt>Renddezvous</dt>
+      <dd>A secret meeting.</dd>
+
+      <dt>Faux</dt>
+      <dd>Faux means fake, or imitation.</dd>
+    </dl>
+  </body>
+
+  index.html :-
+
+    <body>
+    <!-- Attributes :- These are the extra information we provide to tags. There are some tags 
+        which are useless without attribute. e.g. <a></a> tag, it stands for anchor tag and is 
+        used to hyperlink and inside this tag we pass the attribute called 'href="value"', here 
+        href is the attribute name and value is something which we pass to the attribute. e.g. 
+        is shown below.  -->
+    <p>Go to <a href="https://www.google.com">Google</a>!</p>
+    <!-- Right now this anchor tag is taking us to external link but if we want we can go to 
+        internal links too like on our local system. e.g. is shown below. -->
+    <p><a href="./contact.html">Contact Us</a></p>
+    <!-- Through this contact us we are able to go to contact us page but we are not able to 
+        come back to our home page. For that to happen we should link contact us page to our 
+        homepage too. e.g. visit contact.html file -->
+    If we want to open our link is new-tab, not in current tab the we can use
+    'target' attribute and give it a value of '_blank'. e.g.
+    <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+  </body>
+
+  contact.thml :-
+
+   <body>
+    <h1>Contact Us</h1>
+    <p>Go to <a href="./index.html">Hello World</a>!</p>
+  </body>
+
+/****************************************************************************************************/
+
+05/01/2023
+
+index.html :-
+
+<body>
+    <!-- Another type of linking is to navigate within the same page. This won't take us out to external website of different html page, but within tye same page. e.g. is shown below.
+    In this we have to use 'id' attribute. Id should always be unique. 
+    For linking the element of the same page we write href="#idName" -->
+    <a href="#main">Take me down</a>
+    <h1>One</h1>
+    <h1>Two</h1>
+    <h1>Three</h1>
+    <h1>Four</h1>
+    <h1>Five</h1>
+    <h1>Six</h1>
+    <h1>Seven</h1>
+    <h1>Eight</h1>
+    <h1>Nine</h1>
+    <h1>Ten</h1>
+    <h1>Eleven</h1>
+    <h1>Twelve</h1>
+    <h1>Thirteen</h1>
+    <h1>Fourteen</h1>
+    <h1>Fifteen</h1>
+    <h1>Sixteen</h1>
+    <h1>Seventeen</h1>
+    <h1 id="main">Come down here</h1>
+    <p>Om Prakash is a software engineer</p>
+    <h1>Eighteen</h1>
+    <h1>Nineteen</h1>
+    <h1>Twenty</h1>
+
+    <a href="https://en.wikipedia.org/wiki/India#Literature">
+      Go to Literature section in India
+    </a>
+    Here #Literature is the id of the wikipedia's India's Literature section.
+  </body>
+
+
+  <body>
+    <!-- <img> is an image tag which is self enclosing tag and it is also like anchor tag. It is useless without attribute. Its main attribute is 'src="value"'. Image tag is neither Block level element nor Inline level element, it is 'Replaced element' but it acts like Inline level element. -->
+    <img src="./Burger-recipe.jpg" alt="Burger" />
+    <img src="./assets/Burger.jpg" alt="" />
+    <img src="./Burger-recipe.jpg" height="300" width="400" alt="Burger" />
+    <!-- Here, the height and width we are giving is in pixels. Also instead of using local source of image, we can use online images by providing the link of the online image into our source attribute. -->
+    <!-- About alt attribute :- If image is not available then this text is visible also we can write anything in alt attribute but we should always give meaningful alt attribute but in case if we don't want to provide alt attribute then leave it as empty string but do not remove the attribute from img tag, even if we remove it, there won't be any problem but it's not a good practice -->
+  </body>
+
+
+    <body>
+    With anchor tag we can not only navigate to website or webpages but also we
+    can navigate to our gmail or phone call or message etc. e.g.
+    <h4>Contact Us</h4>
+    <a href="mailto:jackadvic07@gmail.com">Write an Email</a>
+    <a href="tel:+919353843240">Click to call</a>
+    The best thing about these are it won't show mailId or telephoneNo.
+  </body>
+
+<body>
+    <!-- <table> :- Stands for Table tag. It is used to create a table-->
+    <table>
+      <caption>
+        <!-- caption is used to give the description to the table. We can also write this description in <p> tag although the result is same but it does not make any connection with the table -->
+        Highest Grossing Movies
+      </caption>
+      <thead>
+        <!-- Stands for 'table head'. Although it does not make any change in our table but it is good practice to use, this shows that this part is table head and we can use it trigger the style of the Table header.  -->
+        <tr>
+          <th>
+            <!-- Stands for 'table header'. It is used to give heading to table rows -->
+            Movie Title
+          </th>
+          <th>Worldwide Gross</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Stands for 'table body'. Although it does not make any change in our table but it is good practice to use, this shows that this part is table body and we can use it trigger the style of the Table body.  -->
+        <tr>
+          <!-- Stands for 'table row' -->
+          <td>
+            <!-- Stands for 'table data cell' -->
+            Avatar
+          </td>
+          <td>$2,923,905,528</td>
+        </tr>
+        <tr>
+          <td>Avengers: Endgame</td>
+          <td>$2,797,501,328</td>
+        </tr>
+        <tr>
+          <td>Titanic</td>
+          <td>$2,187,525,296</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Stands for 'table head'. Although it does not make any change in our table but it is good practice to use, this shows that this part is table head and we can use it trigger the style of the Table header.  -->
+        <tr>
+          <td>Disney</td>
+          <td>6.5 billion</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+
+  Another e.g. of Table :-
+
+<body>
+    <table>
+      <caption>
+        Stationary Items
+      </caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pencil</td>
+          <td>2</td>
+          <td>$1</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td>Erasers</td>
+          <td>4</td>
+          <td>$0.50</td>
+          <td>$2</td>
+        </tr>
+        <tr>
+          <td colspan="3">Subtotal</td>
+          <!-- colspan is an attribute of <td> tag which helps us to span the single <td> upto where we want.
+            Similarly, there is an attribute called rowspan which helps us to span our table row upto where we want. -->
+          <td>$4</td>
+        </tr>
+        <tr>
+          <td colspan="2">Tax</td>
+          <td>10%</td>
+          <td>$0.4</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+
+/****************************************************************************************************/
+
+07/01/2023
+
+index.html :-
+
+<body>
+    <h1>Forms</h1>
+    <form action="" method="">
+      <!-- form tag is used to create / wrap a form. It is a Block level element. Action 
+        and method are attributes of the form which we will study later in JS. The elements 
+        inside the form tag are known as Form Controls. e.g. input tag, dropdown, radio button, 
+        button, etc. all are form controls. -->
+      <label for="firstname">Enter you First Name</label>
+      <!-- label tag is used to give label to a form control. It has attribute 'for' which 
+        helps this label element to bind with the matching 'id' attribute inside form element. 
+        It is also an Inline element -->
+      <input
+        type="text"
+        placeholder="First Name"
+        id="firstname"
+        name="firstname"
+        required
+      />
+      <!-- input tag is used to take input for a form. It is also an Inline level element. It 
+        has various attributes. Some of them are 'type' -> which is used to say what type of 
+        input will form take and by default it is of type 'Text', placeholder -> gives hint to 
+        user that what is to be entered in that particular input box, name -> attribute is used 
+        to say the backend that what type of data is being entered through that input field. 
+        required -> is an attribute of input field which says that, that input field is mandatory, 
+        without this field form won't get completed. One interesting thing is, required attribute 
+        does not take any value. -->
+      <br />
+      <br />
+      <!-- <br> tag is used to add line break in html. It is also a self closing tag. -->
+      <label for="lastname">Enter you Last Name</label>
+      <input
+        type="text"
+        placeholder="Last Name"
+        id="lastname"
+        name="lastname"
+      />
+      <br />
+      <br />
+      <input type="email" placeholder="Email" name="email" />
+      <!-- attribute type="email" is used to email on the form -->
+      <br />
+      <br />
+      <label for="bio">Bio</label>
+      <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+      <!-- text area is used to create a large input box which can take large amount of input. 
+        We can also set the size of the text area by ourself using 'colspan' and 'rowspan' attributes. -->
+      <br />
+      <br />
+      <input type="url" name="url" id="url" placeholder="URL" />
+      <!-- attribute type="url" is used to insert url on the form -->
+      <br />
+      <br />
+      <label for="price-range">Price Range</label>
+      <input
+        type="range"
+        name="price-range"
+        id="price-range"
+        min="5000"
+        max="30000"
+        step="5000"
+      />
+      <!-- attribute type="range" is used to create a range slider on the form with min and max 
+        value of the range along with step if we want. -->
+      <br />
+      <br />
+      <p>Job Type :</p>
+      <label for="fulltime">Full Time</label>
+      <input type="checkbox" id="fulltime" name="fulltime" />
+      <!-- attribute type="checkbox" is used to create a tick box on the form. In this type we 
+        can select multiple options at a time. -->
+      <label for="parttime">Part Time</label>
+      <input type="checkbox" name="parttime" id="parttime" />
+      <br />
+      <br />
+      <p>Do you like Maths? :</p>
+      <label>Yes</label>
+      <input type="radio" name="maths" />
+      <label>No</label>
+      <input type="radio" name="maths" />
+      <!-- attribute type="radio" is used to select either of the option from multiple options. 
+        For this the name attribute of the options should be same as shown is e.g. above. -->
+      <br />
+      <br />
+        <label for="cars">Choose a car :</label>
+        <select name="cars" id="cars">
+        <!-- Select tag is used to create a dropdown menu in a form -->
+            <option value="select">Select</option>
+            <!-- Option tag is used to create options for dropdown menu. While using option tag, 
+                'value="value"' attribute is mandatory -->
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Register</button>
+      <!-- button element is used to create a button for a form. It is also an Inline element. 
+        If the button is inside the form element then by default it behaves as Submit button. 
+        But if it is outside the form, it does not do anything. -->
+
+      <!-- Another way to create a button is using input tag. e.g. is shown below -->
+      <input type="submit" name="submit" id="" value="Go" />
+
+      <!-- The main difference between using button tag and input tag for button is that, in input 
+        tag we have to give 'value' attribute to set the Name of the button. Now it is not 
+        recommended to use input tag to create buttons. -->
+    </form>
+  </body>
+
+/****************************************************************************************************/
+
+09/01/2023
+
+index.html :-
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- the attribute 'lang="en"' says that the major language used on the webpage is 'English', 
+    but it does not stops us from using other languages.  -->
+  <head>
+    <!-- Although we can write our CSS and JS in HTML file itself but generally, we write style 
+      sheet and javascript in separate file and it is a good practice to do that. The head tag 
+      helps us to link this CSS and JS file to our HTML page. But this not mandatory that we 
+      have to link these files here only.
+    Apart from this head tag has other important elements which are given below. Again these tags 
+    are not mandatory but it's a good practice to add these for sure. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World - HTML</title>
+
+    <!-- Other meta tags... -->
+    <meta
+      name="description"
+      content="To give the description to the about the website so that search engine can show 
+      our content if someone searches and our description matches with the search."
+    />
+    <meta
+      name="keywords"
+      content="Again this is used by search enfines to match the content of search just like 
+      meta-description tag above."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  </head>
+  <body>
+    <!-- Semantic tags :- The html tags which says something about the meaning of their contect. 
+    e.g. <h1>, <footer>, <nav>, <p>, <header>, <aside>, <article>, etc. 
+      Using semantic tags has following advantages :-
+      1. Accessibility (Screen reader can read it properly).
+      2. Code Readability (Easy to understand code)
+      3. SEO (Search Engine Optimization)
+    -->
+  </body>
+</html>
+
+
+BUILDING PROJECT :- THE LILLE TACO SHOP
+
+/****************************************************************************************************/
+
+10/01/2023
+
+BUILDING PROJECT :- THE LILLE TACO SHOP (Continue)
+
+/****************************************************************************************************/
